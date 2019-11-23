@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Truth</title>
+<body onload="func('Welcome to Truth Bar Detektif Muda, ayo selesaikan kasus pembunuhan yang sedang terjadi!!!')">
+        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/8Zz1r1WCHvw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/T19Gl1YUNWE?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div id="canvas">
+        <div id="people1" class="people">
+            <div class="pelaku">
+                <img id="image1" src="image/pelaku.png" alt="" class="image">
+            </div>
+            <div class="identitas">
+                <p id="namapeople1">Name: ???</p>
+                <p id="umurpeople1">Age: ???</p>
+                <span class="button"><button onclick="people1()" class="press">Talk</button></span>
+                <span class="truth"><button onclick="truth1()" class="press">Truth</button></span>
+            </div>
+        </div>
+
+        <div id="people2" class="people">
+            <div class="pelaku">
+                <img id="image2" src="image/pelaku.png" alt="" class="image">
+            </div>
+            <div class="identitas">
+                <p id="namapeople2">Name: ???</p>
+                <p id="umurpeople2">Age: ???</p>
+                <span class="button"><button onclick="people2()" class="press">Talk</button></span>
+                <span class="truth"><button onclick="truth2()" class="press">Truth</button></span>
+            </div>
+        </div>
+
+        <div id="people3" class="people">
+            <div class="pelaku">
+                <img id="image3" src="image/pelaku.png" alt="" class="image">
+            </div>
+            <div class="identitas">
+                <p id="namapeople3">Name: ???</p>
+                <p id="umurpeople3">Age: ???</p>
+                <span class="button"><button onclick="people3()" class="press">Talk</button></span>
+                <span class="truth"><button onclick="truth3()" class="press">Truth</button></span>
+            </div>  
+        </div>
+        <img id = "kageyama" src="image/kageyama.png" alt="">
+        <img id = "nagisa" src="image/nagisa.jpg" alt="">
+        <div id="center">
+            <div id="text"></div>
+           
+            <div id="ready">
+                <form action="">
+                    <input type="text" value = '' placeholder="Your Name" id = "input" required>
+                    <button type="submit" onclick="start()">Ready</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="people4" class="people">
+            <div class="pelaku">
+                <img id="image4" src="image/pelaku.png" alt="" class="image">
+            </div>
+            <div class="identitas">
+                <p id="namapeople4">Name: ???</p>
+                <p id="umurpeople4">Age: ???</p>
+                <span class="button"><button onclick="people4()" class="press">Talk</button></span>
+                <span class="truth"><button onclick="truth4()" class="press">Truth</button></span>
+            </div>  
+        </div>
+
+        <div id="people5" class="people">
+            <div class="pelaku">
+                <img id="image5" src="image/pelaku.png" alt="" class="image">
+            </div>
+            <div class="identitas">
+                <p id="namapeople5">Name: ???</p>
+                <p id="umurpeople5">Age: ???</p>
+                <span class="button"><button onclick="people5()" class="press">Talk</button></span>
+                <span class="truth"><button onclick="truth5()" class="press">Truth</button></span>
+            </div>  
+        </div>
+
+        <div id="people6" class="people">
+            <div class="pelaku">
+                <img id="image6" src="image/pelaku.png" alt="" class="image">
+            </div>
+            <div class="identitas">
+                <p id="namapeople6">Name: ???</p>
+                <p id="umurpeople6">Age: ???</p>
+                <span class="button"><button onclick="people6()" class="press">Talk</button></span>
+                <span class="truth"><button onclick="truth6()" class="press">Truth</button></span>
+            </div>  
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

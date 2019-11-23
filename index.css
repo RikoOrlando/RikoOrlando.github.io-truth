@@ -1,0 +1,257 @@
+body{
+    font-family: 'Permanent Marker', cursive; 
+    color: whitesmoke;
+}
+
+#canvas{
+    display: grid;
+    grid-template-columns: repeat(10, 182px);
+    grid-template-rows: repeat(12, 78px);
+    background-image: url(image/background.jpg);
+    width: 1820px;
+    height: 936px;
+    background-size: cover;
+    opacity: 1;
+}
+
+.identitas{
+    font-size: 18px;
+    grid-column:2;
+
+}
+
+#kageyama{
+    height: 350px;
+    width;: 350px;
+    grid-row: 4/span 4;
+    grid-column:3/span 2;
+    position: relative;
+    opacity: 0;
+}
+
+#nagisa{
+    height: 350px;
+    width;: 350px;
+    grid-row: 4/span 4;
+    grid-column:8/span 2;
+    position: relative;
+    opacity: 0;
+}
+
+
+
+.people{
+    display: grid;
+    grid-template-columns: 182px 182px;
+    opacity: 0;
+    margin: 10px 10px;
+    background-image: url(image/BG-char.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.623) 5px 5px;
+
+}
+.people:hover {
+    -webkit-transform: scale(1.05);
+    -m-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.5s ease;
+  }
+
+.image{
+    width: 150px;
+    height: 150px;
+    grid-column:1;
+}
+
+
+#people1{
+    grid-row: 2/span 3;
+    grid-column:1/span 2;
+}
+#people2{
+    grid-row: 1/span 3;
+    grid-column:5/span 2;
+}
+
+#people3{
+    grid-row: 2/span 3;
+    grid-column:9/span 2;
+}
+
+#center{
+    grid-row: 5/span 4;
+    grid-column:3/span 6;
+    text-align: center;
+    background-color: rgba(137, 115, 115, 0.7);
+    background-size: con;
+    padding: 100px 150px ;
+    margin-right: 90px;
+    margin-left: 90px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: rgb(177, 177, 59) solid 5px;
+
+}
+
+#people4{
+    grid-row: 9/span 3;
+    grid-column:1/span 2;
+}
+#people5{
+    grid-row: 10/span 3;
+    grid-column:5/span 2;
+}
+#people6{
+    grid-row: 9/span 3;
+    grid-column:9/span 2;
+}
+
+/* css untuk button di char */
+.press {
+    background-color: rgba(77, 78, 63, 0); 
+    border: white solid 2px ;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Permanent Marker', cursive; 
+    margin-bottom: 10px;
+    height: 30px;
+    width: 70px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  
+.press:hover {
+    background-color: #bdbd22;
+    color: white;
+  }
+
+button {
+    background-color: rgba(77, 78, 63, 0); 
+    border: white solid 2px ;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Permanent Marker', cursive; 
+    margin-bottom: 10px;
+    height: 30px;
+    width: 100px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  
+button:hover {
+    background-color: #c7230e;
+    color: white;
+  }
+
+  .fadein {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+}
+
+.fadeout {
+    animation: fadeOut ease 2s;
+    -webkit-animation: fadeOut ease 2s;
+    -moz-animation: fadeOut ease 2s;
+    -o-animation: fadeOut ease 2s;
+    -ms-animation: fadeOut ease 2s;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-moz-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-webkit-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-o-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-ms-keyframes fadeOut {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+
+  
