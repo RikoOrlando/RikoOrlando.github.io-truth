@@ -7,6 +7,7 @@ var talk = document.getElementsByClassName('button')
 var player = ''
 var song1 = document.getElementById('song1')
 var song2 = document.getElementById('song2')
+var click = document.getElementById('click')
 
 function func (str){
     document.getElementById('text').innerHTML = ''
@@ -25,6 +26,7 @@ function func (str){
 
 function start(){
     song1.play()
+    click.play()
     var inp = document.getElementById('input').value
     if(inp){
     player = inp
@@ -43,6 +45,7 @@ function start(){
 }
 
 function next(){
+    click.play()
     document.getElementById('nagisa').style.opacity = 1
     document.getElementById("nagisa").className = 'fadein'
     var test = 'Korbannya ialah Nagisa, salah satu dari anggota Club Drama di Kampus ini, saat itu Nagisa mengikuti kegiatan Club drama seperti biasa';
@@ -56,6 +59,7 @@ function next(){
 }
 
 function next2(){
+    click.play()
     var test = 'namun sebelum latihan dimulai, kami sudah menemukannya Nagisa dengan keadaan tidak bernyawa di ruang MakeUp';
     func(test);
     document.getElementById("ready").innerHTML = "";
@@ -68,6 +72,7 @@ function next2(){
 }
 
 function next3(){
+    click.play()
     document.getElementById("ready").innerHTML = "";
     alert('dalam permainan ini kami memiliki kemampuan TRUTH yang dapat mengetahui kebohongan seseorang, namun hanya dapat digunakan kepada 2 (dua) orang saja, gunakan kemampuan tersebut dengan bijak')
     var test = 'dan ini adalah ke enam anggota drama kami yang sedang berada di TKP saat kejadian itu';
@@ -82,6 +87,7 @@ function next3(){
 
 
 function mulai(){
+  
     for(i=0; i<7; i++){
     var people1 = document.getElementsByClassName("people")[i];
     var opacity1 = Number(people1.style.opacity)
@@ -98,6 +104,7 @@ function mulai(){
 
 //fungsi final stage
 function final(){
+    click.play()
     song1.pause()
     song2.play()
     document.getElementById('kageyama').style.opacity = 1
@@ -141,6 +148,7 @@ function final(){
 
 //percakapan orang pertama
 function people1(){
+    click.play()
     if(Object.keys(judgement).length > 4){
         btn.innerHTML = 'Judgement';
         document.getElementById('ready').appendChild(btn); 
@@ -162,6 +170,7 @@ function people1(){
 
 //truth orang pertama
 function truth1(){
+    click.play()
     if(judgement.hasOwnProperty('people1') == false){
         var test = 'Hei ' + player + ' kamu belum mendengarkan alibi dari orang tersebut'
         func (test)
@@ -184,6 +193,7 @@ function truth1(){
 
 //percakapan orang kedua
 function people2(){
+    click.play()
     if(Object.keys(judgement).length > 4){
         btn.innerHTML = 'Judgement'
         document.getElementById('ready').appendChild(btn)
@@ -205,6 +215,7 @@ function people2(){
 
 //truth orang kedua
 function truth2(){
+    click.play()
     if(judgement.hasOwnProperty('people2') == false){
         var test = 'Hei ' + player + ' kamu belum mendengarkan alibi dari orang tersebut'
         func (test)
@@ -226,6 +237,7 @@ function truth2(){
 
 //percakapan orang ketiga
 function people3(){
+    click.play()
     if(Object.keys(judgement).length > 4){
         btn.innerHTML = 'Judgement'
         document.getElementById('ready').appendChild(btn)
@@ -247,6 +259,7 @@ function people3(){
 
 //truth orang ketiga
 function truth3(){
+    click.play()
     if(judgement.hasOwnProperty('people3') == false){
         var test = 'Hei ' + player + ' kamu belum mendengarkan alibi dari orang tersebut'
         func (test)
@@ -269,6 +282,7 @@ function truth3(){
 
 //percakapan orang keempat
 function people4(){
+    click.play()
     if(Object.keys(judgement).length > 4){
         btn.innerHTML = 'Judgement'
         document.getElementById('ready').appendChild(btn)
@@ -290,6 +304,7 @@ function people4(){
 
 //truth orang keempat
 function truth4(){
+    click.play()
     if(judgement.hasOwnProperty('people4') == false){
         var test = 'Hei ' + player + ' kamu belum mendengarkan alibi dari orang tersebut'
         func (test)
@@ -312,6 +327,7 @@ function truth4(){
 
 //percakapan orang lima
 function people5(){
+    click.play()
     if(Object.keys(judgement).length > 4){
         btn.innerHTML = 'Judgement'
         document.getElementById('ready').appendChild(btn)
@@ -333,6 +349,7 @@ function people5(){
 
 //truth orang kelima
 function truth5(){
+    click.play()
     if(judgement.hasOwnProperty('people5') == false){
         var test = 'Hei ' + player + ' kamu belum mendengarkan alibi dari orang tersebut'
         func (test)
@@ -355,6 +372,7 @@ function truth5(){
 
 //percakapan orang enam
 function people6(){
+    click.play()
     if(Object.keys(judgement).length > 4){
         btn.innerHTML = 'Judgement'
         document.getElementById('ready').appendChild(btn)
@@ -376,6 +394,7 @@ function people6(){
 
 //truth orang keenam
 function truth6(){
+    click.play()
     if(judgement.hasOwnProperty('people6') == false){
         var test = 'Hei ' + player + ' kamu belum mendengarkan alibi dari orang tersebut'
         func (test)
@@ -399,6 +418,7 @@ function truth6(){
 
 //jawaban atas tuduhan 1
 function pelaku1(){
+    click.play()
     var test = 'Terima Kasih Detectif ' + player + ' aku akan segera mengamankan mahasiswa ini'
     func (test)
     for(o=0; o<truth.length;o++){
@@ -408,6 +428,7 @@ function pelaku1(){
 
 //jawaban atas tuduhan 1
 function pelaku2(){
+    click.play()
     var test = 'Terima Kasih Detectif ' + player + ' aku akan segera mengamankan mahasiswa ini'
     func (test)
     for(o=0; o<truth.length;o++){
@@ -417,6 +438,7 @@ function pelaku2(){
 
 //jawaban atas tuduhan 1
 function pelaku3(){
+    click.play()
     var test = 'Terima Kasih Detectif ' + player + ' aku akan segera mengamankan mahasiswa ini'
     func (test)
     for(o=0; o<truth.length;o++){
@@ -426,6 +448,7 @@ function pelaku3(){
 
 //jawaban atas tuduhan 1
 function pelaku4(){
+    click.play()
     var test = 'Terima Kasih Detectif ' + player + ' aku akan segera mengamankan mahasiswa ini'
     func (test)
     for(o=0; o<truth.length;o++){
@@ -435,6 +458,7 @@ function pelaku4(){
 
 //jawaban atas tuduhan 1
 function pelaku5(){
+    click.play()
     var test = 'Terima Kasih Detectif ' + player + ' aku akan segera mengamankan mahasiswa ini'
     func (test)
     for(o=0; o<truth.length;o++){
@@ -444,6 +468,7 @@ function pelaku5(){
 
 //jawaban atas tuduhan 1
 function pelaku6(){
+    click.play()
     var test = 'Terima Kasih Detectif ' + player + ' aku akan segera mengamankan mahasiswa ini'
     func (test)
     for(o=0; o<truth.length;o++){
@@ -453,6 +478,7 @@ function pelaku6(){
 
 
 function boss (){
+    click.play()
     var last = document.getElementsByClassName('people');
     for(y=0; y<last.length; y++){
     document.getElementsByClassName('people')[y].innerHTML = '';
