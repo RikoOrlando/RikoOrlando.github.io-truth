@@ -5,7 +5,8 @@ var skill = {}
 var truth = document.getElementsByClassName('truth');
 var talk = document.getElementsByClassName('button')
 var player = ''
-document.getElementsByTagName('audio').play()
+var song1 = document.getElementById('song1')
+var song2 = document.getElementById('song2')
 
 function func (str){
     document.getElementById('text').innerHTML = ''
@@ -23,6 +24,7 @@ function func (str){
 
 
 function start(){
+    song1.play()
     var inp = document.getElementById('input').value
     if(inp){
     player = inp
@@ -96,6 +98,8 @@ function mulai(){
 
 //fungsi final stage
 function final(){
+    song1.pause()
+    song2.play()
     document.getElementById('kageyama').style.opacity = 1
     document.getElementById("kageyama").className = 'fadein'
     document.getElementById('kageyama').addEventListener("click", () => { boss(); })
